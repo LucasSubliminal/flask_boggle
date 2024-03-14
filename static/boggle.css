@@ -1,0 +1,42 @@
+body {
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+}
+.board {
+    margin-left: auto;
+    margin-right: auto;
+    color: #5E5DF0;
+}
+
+.form-button {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.score, .timer {
+    color: #5E5DF0;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.submit_word {
+    color: white;
+    background-color:  #5E5DF0;
+    border: none;
+}
+
+.words {
+    color: #5E5DF0;
+    
+}
+
+#numPlays, #highScore {
+    color: #5E5DF0;
+}
+
+.p {
+    color: #5E5DF0;
+}

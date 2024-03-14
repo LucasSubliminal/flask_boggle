@@ -1,0 +1,36 @@
+<link rel="stylesheet" type="text/css" href="../static/boggle.css"/>
+{% extends 'base.html' %}
+
+{% block content %}
+<section id="boggle">
+    <table class="board">
+        {% for row in board %}
+            <tr>
+                {% for cell in row %}
+                    <td>{{ cell }}</td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </table>
+    <form name="word-submit"  method="post" action="/checkword">
+        <div class="form-button">
+            <input class="word_input"type="text"><button class="submit_word" type="submit">Enter Word</button>
+        </div>
+    </form>
+    <div>
+        <ul class = "words">
+
+        </ul>
+    </div>
+    <div>
+       <div class="score"></div>
+       <div class="timer"></div>
+    </div>
+    <div>
+        <p class="p">Number of Plays:</p> <span id="numPlays">0</span>
+    </div>
+    <div>
+        <p class="p">High Score:</p> <span id="highScore">0</span>
+    </div>
+</section>
+{% endblock %}

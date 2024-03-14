@@ -1,0 +1,18 @@
+<link rel="stylesheet" type="text/css" href="../static/home.css"/>
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="text">
+    <h2 class="h2">Welcome to the  Boggle game!</h2> 
+    <h3 class="h3">The goals of the game are as follows ...</h3>
+    <ul>
+        <li class="li">Get the highest points total.</li>
+        <li class="li">To gain points, players create words from a random assortment of letters in a 5x5 grid</li>
+    </ul>
+</div>
+    <form method="POST">
+        <div class="button-form">
+        <button class="button" type="submit">Start Game</button>
+        </div>
+    </form>
+{% endblock %}
